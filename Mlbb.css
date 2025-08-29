@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  height:100%;
+}
+nav {
+  max-width: 1000px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+}
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+/* style utama */
+body {
+  background: radial-gradient(circle,rgba(30, 170, 230, 1) 0%, rgba(3, 7, 69, 1) 92%);
+  font-family: "Open Sans";
+  color: white;
+  text-align: justify
+}
+.logo-kiri img {
+    width: 150px;     
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.logo-kanan img {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.lane{
+  display: flex;
+  justify-content: center;
+  gap: 100px; 
+  margin-top: 30px;
+}
+
+/* style css lane MLBB */
+.hero {
+  display: flex;
+  flex-wrap: wrap;     
+  gap: 20px;           
+  margin-top: 30px;
+}
+.hero-card {
+  position: relative;
+  overflow: hidden;
+}
+.hero img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+  display: block;
+}
+.hero-card:hover img {
+  transform: scale(1.1);
+}
+.nama {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: transform 0.3s;
+}
+.hero-card:hover .nama {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
