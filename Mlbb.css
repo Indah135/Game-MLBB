@@ -4,7 +4,7 @@ html {
   height:100%;
 }
 nav {
-  max-width: 1000px;
+  max-width: 1100px;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   margin: 0 auto;
 }
@@ -79,7 +79,7 @@ body {
 .nama {
   position: absolute;
   bottom: 10px;
-  center: 50%;
+  center: 50px;
   transform: translateX(-50%);
   background: rgba(0,0,0,0.6);
   color: white;
